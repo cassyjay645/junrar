@@ -29,5 +29,8 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file unrar/pom.xml
       
+    - name: tarp
+      run: tar -czf pack.tar.gz unrar/target
+      
     - name: lsd
-      run: ls -lh unrar
+      run: ls -R unrar/target
