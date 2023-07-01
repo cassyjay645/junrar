@@ -30,4 +30,4 @@ jobs:
       run: mvn -B package --file unrar/pom.xml
       
     - name: lsd
-      run: ls -lh
+      run: ls -lh unrar
